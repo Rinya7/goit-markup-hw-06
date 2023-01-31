@@ -357,6 +357,38 @@
               <use href="./images/icons.svg#icon-close"></use>
             </svg>
           </button>
+          <p class="form-text">Leave your contacts and we will call you back</p>
+          <div>
+            <label name="name" class="label-name" placeholder=" ">
+              <span class="form-title">Name</span>
+              <input type="text" class="imput-type" />
+            </label>
+            <label name="tel" class="label-name" placeholder=" ">
+              <span class="form-title">Phone</span>
+              <input type="tel" class="imput-type" />
+            </label>
+            <label name="email" class="label-name" placeholder=" ">
+              <span class="form-title">Email</span>
+              <input type="email" class="imput-type" />
+            </label>
+            <label name="textarea" class="label-name" placeholder=" ">
+              <span class="form-title">Comment</span>
+              <textarea name="" id="" class="imput-type"></textarea>
+            </label>
+            <label class="label-name">
+              <input
+                type="checkbox"
+                name="policy"
+                value="policy"
+                class="checkbox"
+              />
+              <p class="privacy">
+                I accept the terms and conditions of the
+                <a href="#" class="link privacy-link">Privacy Policy</a>
+              </p>
+            </label>
+          </div>
+          <button type="submit" class="button btn-sendform">Send</button>
         </div>
       </div>
     </main>
@@ -404,6 +436,19 @@
             </li>
           </ul>
         </div>
+
+        <form class="form-subscribe" name="subscribe">
+          <label class="label">
+            <spam class="subscribe-title">Subscribe</spam>
+            <input
+              type="email"
+              name="email"
+              class="input-email"
+              placeholder="E-mail"
+            />
+          </label>
+          <button type="submit" class="btn-subscribe">Subscribe</button>
+        </form>
       </div>
     </footer>
     <script src="./js/modal.js"></script>

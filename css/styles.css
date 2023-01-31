@@ -25,6 +25,7 @@
   --bcg-navy-blue-modal: rgba(46, 47, 66, 0.4);
   --bcg-modal: #fcfcfc;
   --bodrer-btn-close: rgba(0, 0, 0, 0.1);
+  --privacy: #757575;
 }
 
 body {
@@ -576,6 +577,7 @@ img {
 .footer-social .list-social {
   display: flex;
   align-items: center;
+  margin-right: 80px;
 }
 
 .list-social .item:not(:last-child) {
@@ -605,6 +607,72 @@ img {
 
 .footer-link-social:is(:hover, :focus) {
   background-color: var(--green);
+}
+
+/* =====================FOOTER-SUBSCRIBE======================= */
+
+.form-subscribe {
+  display: inline-flex;
+  align-items: flex-end;
+  height: 80px;
+}
+
+.subscribe-title {
+  display: block;
+
+  font-weight: 500;
+  color: var(--white);
+  margin: 0;
+  margin-bottom: 16px;
+}
+
+.label {
+  display: block;
+  margin-right: 24px;
+}
+
+.input-email {
+  margin: 0;
+  width: 264px;
+  height: 40px;
+  padding-left: 16px;
+  padding-top: 8px;
+  padding-bottom: 8px;
+  background: inherit;
+
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 2;
+}
+
+.btn-subscribe {
+  display: inline-flex;
+  min-width: 140px;
+  height: 40px;
+  align-items: center;
+  padding-left: 24px;
+  padding-top: 8px;
+  padding-bottom: 8px;
+  border: 0;
+
+  background: #4d5ae5;
+  border-radius: 4px;
+  color: var(--white);
+  letter-spacing: 0.04em;
+}
+
+.btn-subscribe::after {
+  content: "";
+  width: 24px;
+  height: 24px;
+  margin-left: 16px;
+  margin-right: 24px;
+  border-color: inherit;
+
+  background-image: url("../images/telegram.svg");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
 }
 
 /*=============================Страница  portfolio======================== */
@@ -763,8 +831,11 @@ img {
   opacity: 1;
 
   width: 408px;
-  height: 576px;
+
   background-color: var(--bcg-modal);
+
+  padding: 72px 24px 24px 24px;
+  text-align: center;
 }
 
 .btn-close {
@@ -786,6 +857,75 @@ img {
 
 .btn-close:hover {
   background-color: var(--ocean);
+}
+
+.form-text {
+  margin: 0;
+  font-weight: 500;
+  text-align: center;
+  padding-bottom: 14px;
+}
+
+.label-name:not(:last-child) {
+  display: block;
+  width: 100%;
+  margin-bottom: 8px;
+  text-align: left;
+}
+
+.label-name:last-child {
+  display: flex;
+  width: 100%;
+  margin-bottom: 24px;
+  text-align: left;
+}
+
+.imput-type {
+  width: 100%;
+}
+
+.form-title {
+  display: block;
+  font-size: 12px;
+  line-height: 1.16;
+  letter-spacing: 0.04em;
+  color: var(--light-slate);
+  margin-bottom: 4px;
+}
+
+textarea {
+  resize: none;
+  min-height: 120px;
+}
+
+.btn-sendform {
+  border-radius: 4px;
+  padding: 16px 32px;
+  min-width: 169px;
+  border: 1px solid transparent;
+
+  color: var(--white);
+  background-color: var(--iris);
+
+  font-family: inherit;
+  font-weight: 500;
+  font-size: inherit;
+  line-height: inherit;
+  align-items: center;
+  text-align: center;
+  letter-spacing: 0.04em;
+  cursor: pointer;
+
+  position: background-color 250ms var(--time-function);
+}
+
+.privacy {
+  margin: 0;
+  font-size: 12px;
+  line-height: 1.33;
+  letter-spacing: 0.04em;
+  color: var(--privacy);
+  margin-left: 8px;
 }
 
 /* Основной цвет текста NAVY BLUE:#2E2F42 */
