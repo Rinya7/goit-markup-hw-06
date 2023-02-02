@@ -644,6 +644,11 @@ img {
   font-weight: 400;
   font-size: 12px;
   line-height: 2;
+  color: var(--white);
+  font-size: inherit;
+  line-height: inherit;
+  font-family: inherit;
+  letter-spacing: inherit;
 }
 
 .btn-subscribe {
