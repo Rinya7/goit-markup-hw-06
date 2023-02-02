@@ -906,11 +906,6 @@ img {
   border: 1px solid #4d5ae5;
 }
 
-.txtarea-input:focus-within {
-  outline: none;
-  border: 1px solid #4d5ae5;
-}
-
 /* =============INPUT-ICONS======= */
 .input-area {
   position: relative;
@@ -979,6 +974,11 @@ textarea {
   border: 1px solid var(--border-input);
   border-radius: 4px;
   transition: border 250ms var(--time-function);
+}
+
+.txtarea-input:focus-within {
+  outline: none;
+  border: 1px solid #4d5ae5;
 }
 
 .btn-sendform {
