@@ -27,6 +27,8 @@
   --bodrer-btn-close: rgba(0, 0, 0, 0.1);
   --privacy: #757575;
   --border-input: rgba(33, 33, 33, 0.2);
+  --border-input-email: rgba(255, 255, 255, 0.3);
+  --border-input-email-dropshadow: rgba(0, 0, 0, 0.15);
 }
 
 body {
@@ -641,9 +643,11 @@ img {
   padding-bottom: 8px;
   background: inherit;
 
+  border: 1px solid var(--border-input-email);
+  filter: drop-shadow(0px 4px 4px var(--border-input-email-dropshadow));
+  border-radius: 4px;
+
   font-weight: 400;
-  font-size: 12px;
-  line-height: 2;
   color: var(--white);
   font-size: inherit;
   line-height: inherit;
@@ -867,7 +871,7 @@ img {
   transition: background-color 250ms var(--time-function);
 }
 
-.btn-close:is(:hover, :focus) {
+.btn-close:focus {
   background-color: var(--ocean);
 }
 
@@ -938,8 +942,8 @@ img {
 
 .checkbox-icon {
   position: absolute;
-  width: 24px;
-  height: 24px;
+  width: 16px;
+  height: 16px;
   background-image: url(../images/checkbox.svg);
   background-size: cover;
   background-repeat: no-repeat;
@@ -1003,16 +1007,18 @@ textarea {
 }
 
 .privacy {
-  display: flex;
   height: 24px;
-  align-items: center;
 
   margin: 0;
   font-size: 12px;
   line-height: 1.33;
   letter-spacing: 0.04em;
   color: var(--privacy);
-  margin-left: 48px;
+  margin-left: 24px;
+}
+
+.privacy-link {
+  text-decoration: underline;
 }
 
 /* Основной цвет текста NAVY BLUE:#2E2F42 */
